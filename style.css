@@ -1,0 +1,219 @@
+body
+{
+    background: #101353;
+}
+
+/* Styling the player*/
+.player
+{
+    position: relative;
+    top: 100px;
+    left: 40%;
+    height: 430px;
+    width: 300px;
+    background: #fcf6f2;
+    border-radius: 7px;
+}
+
+.player .features-container
+{
+    position: absolute;
+    bottom: 0px;
+}
+
+/* Song information*/
+.song-description
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cover
+{
+    height: 200px;
+    width: 200px;
+    margin: 40px 0 20px 50px;
+    background-image: url('images/kavinsky.png');
+    background-origin: border-box;
+    background-repeat: no-repeat;
+}
+
+
+.artist
+{
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgba(85, 85, 85, 0.705);
+}
+
+.title
+{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    color: #c70d3a;
+}
+
+/* Styling the seek bar*/
+.player .seek-bar
+{
+    position: relative;
+    width: 300px;
+    height: 6px;
+    background: #f39c6e;
+}
+
+.player .seek-bar .fill
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f05706;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+}
+
+
+/* Styling the buttons*/
+.button-controllers
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0 0 7px 7px;
+    height: 90px;
+    background: #c70d3a;
+}
+
+.restart-button
+{
+    cursor: pointer;
+}
+
+.play-button
+{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    background: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.pause-button
+{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    background: white;
+    outline: none;
+    cursor: pointer;
+} /*#007a7e*/
+
+.change-buttons
+{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    background: white;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Making the play/pause icons*/
+.play
+{
+    position: absolute;
+    top: 8px;
+    left: 11px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 0 11px 22px;
+    border-color: transparent transparent transparent black;
+    cursor: pointer;
+}
+
+.pause
+{
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: black;
+    cursor: pointer;
+}
+
+.previous-button
+{
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.next-button
+{
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Button volume ON/OFF */
+.volume-on-off
+{
+    cursor: pointer;
+}
+
+.hidden
+{
+    display: none;
+}
+
+/* Volume button */
+.volume-container-all
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+    padding-left: 30px;
+}
+
+.volume-slider-container
+{
+    height: 8px;
+    width: 250px;
+    border-radius: 10px;
+    position:relative;
+    background-color:#ddd;
+}
+
+.volume-slider
+{
+    height:100%;
+    width:100%;
+    position:absolute;
+    border-radius: 10px;
+    background-color: #f05706;
+}

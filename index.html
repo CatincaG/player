@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> CG Music Player </title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="player js-player">
+            <div class="song-description">
+                <div class="js-cover cover"><img></div>
+                <div class="song-information">
+                    <div class="js-artist artist">Kavinsky</div>
+                    <div class="js-song-title title">Nightcall</div>
+                </div>
+            </div>
+            <div class="features-container">
+                <div class="seek-bar js-seek-bar">
+                    <div class="fill js-seek-bar-fill"></div>
+                </div>
+                <audio class="js-audio" src="music/nightcall.mp3"></audio>
+                <div class="button-controllers">
+                    <div class="js-restart-button restart-button"><img src="icons/restart.svg"></div>
+                    <div class="js-previous-button change-buttons"><img src="icons/previous.svg" class="previous-button"></div>
+                    <div class="js-play-button play-button"><div class="play"></div></div>
+                    <div class="js-pause-button pause-button hidden"><div class="pause"></div></div>
+                    <div class="js-next-button change-buttons"><img src="icons/next.svg" class="next-button"></div>
+                    <div class="js-volume-on-off volume-on-off">
+                        <div class="js-volume-on"><img src="icons/volumeUp.svg"></div>
+                        <div class="js-muted hidden"><img src="icons/muted.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="volume-container-all">
+            <div class="volume-slider-container">
+                <div class="volume-slider"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
